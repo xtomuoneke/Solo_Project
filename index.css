@@ -1,0 +1,302 @@
+body{
+  margin: 0;
+  
+}
+
+/* Navbar styles */
+.navbar{
+  background: black;
+  color: darkgoldenrod;
+}
+.navbar-brand{
+  background-color: black;
+  color: aquamarine !important;
+  font-family: fantasy;
+  padding: 0px 0px;
+  border: 2px green dotted;
+  border-radius: 50%;
+  box-shadow: 2px 1px 1px 4px gray; 
+}
+.nav-link,.sign{
+  background-color: blue;
+}
+
+.nav-link .log{
+  font-weight: bolder;
+}
+
+.form-control::placeholder{
+  color: darkgoldenrod;
+  font-weight: bold;
+}
+
+/* Small navbar styles begins here */
+
+
+/* Styles for image container */
+
+.container-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  /* background-color: black; */
+  background-image: url('https://media.istockphoto.com/id/1487972668/photo/artificial-neural-network-abstract-technology-background.jpg?s=612x612&w=0&k=20&c=wRn-JFyd8-boqUj91IT2n9vphiINAevPA6sUbqycd6c=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: radial-gradient(circle, red, blue); */
+  
+  overflow: hidden;
+
+}
+.image-container{
+  position: relative;
+  width: 300px; 
+  height: 280px; 
+  transform-style: preserve-3d; 
+  transform: perspective(1000px) rotateY(0deg); 
+  transition: transform 1s;
+
+}
+.image-container span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: rotateY(calc(var(--i)*90deg)) translateZ(400px);
+
+}
+.image-container h4{
+  background-color: black;
+  color: aquamarine;
+  padding: 5px;
+  position: relative;
+  top: 175px;
+  box-shadow: 1px 2px 4px 1px;
+}
+.image-container h4:hover{
+  background-color: black;
+  color: darkgoldenrod;
+}
+.image-container a{
+  text-decoration: none;
+  color: black;
+}
+.image-container img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.btn-container{
+  position: relative;
+  width: 80%;
+  /* justify-content: space-between; */
+}
+.btnn{
+  position: absolute;
+  bottom: -80px;
+  background-color: black;
+  color: aquamarine;
+  box-shadow: 1px 2px 3px 3px white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.btn:hover{
+  filter: brightness(1.5);
+}
+#prev{
+  left: 20%;
+}
+#next{
+  right: 20%;
+}
+/* styles for image gallery ends here */
+
+/* styles for small image container begins */
+.simgContainer{
+  display: flex;
+
+}
+.imgContainer img{
+  width: 33%;
+
+}
+
+
+/* Styles for card container */
+
+.card-container{
+  width: 100%;
+  height: 80;
+  background: linear-gradient(black, indigo );
+
+}
+.card{
+  height: 400px;
+}
+.card img{
+  height: 250px;
+  width: 358px;
+}
+
+.buflex{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+/* Styles for about us begins here */
+.imgContainer{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.imgContainer img{
+  width: 33%;
+  height: 400px;
+}
+
+.abHead{
+  background: linear-gradient(skyblue, darkgoldenrod);
+  padding: 40px;
+  margin-top: 0px;
+  text-align: center;
+  font-family: fantasy;
+  letter-spacing: 8px;
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+
+.aboutContainer h4{
+  background-color: black;
+  color: darkgoldenrod;
+  text-align: center;
+  padding: 10px 0px;
+  width: 70%;
+  margin: auto;
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+.aboutContainer{
+  margin-top: 0px;
+
+  background: linear-gradient(slateblue, black);
+}
+.aboutContainer p{
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+
+}
+.offerContainer h4{
+  background-color: black;
+  color: darkgoldenrod;
+  text-align: center;
+  padding: 10px 0px;
+  width: 70%;
+  margin: auto;
+  font-size: 25px;
+  border-radius: 50%;
+
+}
+.offerContainer{
+  margin-top: 0px;
+
+  background: linear-gradient(slateblue, black);
+  padding-bottom: 30px;
+}
+.offerContainer p{
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.offerContainer .fa-solid,.fa-brands{
+  color: darkgoldenrod;
+  padding: 10px;
+
+}
+.offerContainer div{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+}
+.offerContainer button{
+  background-color: black;
+  color: darkgoldenrod;
+  font-weight: bolder;
+  padding: 15px 7px;
+  margin: 0px 5px;
+  box-shadow: 1px 1px 8px 1px white;
+  border-radius: 15px;
+  
+
+}
+.pseudoContainer h1{
+  background: linear-gradient(skyblue, darkgoldenrod);
+  padding: 40px;
+  margin-top: 0px;
+  text-align: center;
+  font-family: fantasy;
+  letter-spacing: 8px;
+  font-size: 45px;
+  margin-bottom: 0px;
+}
+/* style for about us ends here */
+
+
+/* footer styles begins here */
+.footer-container{
+  background-color: black;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.footer-flex{
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+}
+h3{
+  color: darkgoldenrod;
+}
+.footer-flex ul li{
+  list-style: none;
+  padding: 0.5rem 0;
+  
+}
+.footer-flex ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: serif;
+}
+.footer-flex ul li a:hover{
+  color: darkgoldenrod;
+}
+
+.fomeflex{
+  padding: 1rem;
+  font-size: 25px;
+}
+.fomeflex,.fa-brands{
+  padding: 5px;
+}
+h6{
+  font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 15px;
+}
+

@@ -1,0 +1,147 @@
+body{
+  margin: 0;
+  background: linear-gradient(gray, black)
+}
+
+/* style for regi-container */
+.regis-container{
+  width: 43%;
+  margin: auto;
+}
+.img-container{
+  /* width: 100%; */
+  height: 43vh;
+  background-image: url('https://fastly.picsum.photos/id/4/5000/3333.jpg?hmac=ghf06FdmgiD0-G4c9DdNM8RnBIN7BO0-ZGEw47khHP4');
+  background-size: cover;
+  margin-top: 0;
+  max-width: 100%;
+}
+
+  
+h3{
+  width: 100%;
+  background-color: darkgoldenrod;
+  padding: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+  box-sizing: border-box;
+
+}
+.time-container{
+  width: 100%;
+  background-color: darkgoldenrod;
+  padding: 1.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+p{
+  text-align: center;
+  color: white;
+}
+.bottin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.regisButton{
+  background-color: darkgoldenrod;
+  padding: 12px;
+  border-radius: 50px;
+  box-shadow: 2px 4px 3px ;
+  font-weight: bolder;
+  font-size: 15px;
+}
+button:hover{
+  opacity: 0.8;
+  background-color: black;
+  color: darkgoldenrod;
+}
+
+
+/* style for regisPage */
+.flex-container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.optcont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  }
+
+  h2{
+    width: 60%;
+    background-color: darkgoldenrod;
+    padding: 0.7rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    position: absolute;
+    
+  }
+  .regii{
+    padding: 15px 25px;
+    margin-right: 200px;
+    margin-top: 20px;
+    background-color: darkgoldenrod;
+    border-radius: 50px;
+    font-weight: bolder;
+  }
+  .fa-solid, .fa-regular{
+    padding-right: 10px;
+
+  
+  }
+
+  /* mobile responsiveness */
+  @media (max-width: 900px){
+    .regis-container{
+      width: 70%;
+    }
+    .time-container{
+      padding: 1rem;
+      letter-spacing: 1.5px;
+
+    }
+    .flex-container{
+      display: block;
+      width: 100%;
+      position: static;
+    }
+    .optcont{
+      position: static;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-left: 100px;
+    }
+    h2{
+      position: static;
+      top: auto;
+      right: auto;
+      margin-top: 2rem;
+      margin-right: 170px;
+    }    
+    
+  }
