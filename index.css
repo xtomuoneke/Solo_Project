@@ -34,7 +34,35 @@ body{
 
 
 /* Styles for image container */
+.smallNavbar{
+  background-color: black;
+}
 
+.snavbar{
+  background: linear-gradient(rgb(84, 82, 82), darkgray );
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  border-radius: 20%;
+
+}
+.snavbar button{
+  background-color: rgb(22, 22, 86);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px 1px blue;
+  font-weight: bold;
+}
+.snavbar .help{
+  background-color: brown;
+  font-weight: lighter;
+}
+
+/* Styles for image gallery starts here */
 .container-body{
   display: flex;
   flex-direction: column;
@@ -117,6 +145,7 @@ body{
   right: 20%;
 }
 /* styles for image gallery ends here */
+
 
 /* styles for small image container begins */
 .simgContainer{

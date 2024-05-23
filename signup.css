@@ -1,0 +1,113 @@
+body{
+  background: linear-gradient(to right,  darkblue,  black, darkblue);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.signContainer{
+  width: 450px;
+  margin: auto;
+  background-color: black;
+}
+#form{
+  width: 450px;
+  margin: auto;
+  padding: 30px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.logo{
+  background-color: black;
+  color: aquamarine !important;
+  font-family: fantasy;
+  padding: 2px 2px;
+  border: 2px green dotted;
+  border-radius: 50%;
+  box-shadow: 2px 1px 1px 4px gray; 
+
+}
+#form a{
+  text-decoration: none;
+}
+
+#form h1{
+  color: darkblue;
+  text-align: center;
+  font-weight: bolder;
+}
+label{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#form button{
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+  background-color: darkblue;
+  border: none;
+  border-radius: 4px;
+  font-weight: bolder;
+}
+#form button:hover{
+  background-color: #0e9b5e;
+  color: darkblue;
+}
+
+button.sign{
+  width: 20%;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: #0e9b5e;
+}
+h4{
+  text-align: center;
+  color: red;
+
+}
+h4 .fa-solid{
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.inpuControl{
+  display: flex;
+  flex-direction: column;
+}
+
+.inpuControl input{
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inpuControl input:focus{
+  outline: 0;
+}
+
+.inpuControl.success input{
+  border-color: #09c372;
+
+}
+.inpuControl.error input{
+  border-color: #ff3860;
+}
+
+.inpuControl .error{
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
