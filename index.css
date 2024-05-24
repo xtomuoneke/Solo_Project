@@ -63,7 +63,9 @@ body{
 }
 
 /* Styles for image gallery starts here */
+
 .container-body{
+  flex-basis: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,9 +152,12 @@ body{
 /* styles for small image container begins */
 .simgContainer{
   display: flex;
-
+  /* align-items: center;
+  overflow: hidden; */
 }
-.imgContainer img{
+.simgContainer img{
+  flex-basis: 33%;
+  height: 50vh;
   width: 33%;
 
 }
