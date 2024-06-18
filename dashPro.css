@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --tnav-color: #ffff00;
+  --bnav-color: #77770d;
+  --form-background-image: url('https://images.pexels.com/photos/4194850/pexels-photo-4194850.jpeg');
+  --form2-background-image: url('https://images.pexels.com/photos/6402532/pexels-photo-6402532.jpeg');
+  --form-padding: 2rem;
+  --form-magging: 3rem;
+  --form-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --form2-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 45%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Styles for Students Dashboard */
+.dash-container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 15% 28.33% 28.33% 28.33%;
+  grid-template-rows: 10% 35% 35% 20%;
+  grid-template-areas: 
+  'sidebar nav nav nav'
+  'sidebar main main main'
+  'sidebar card1 card2 card3'
+  'sidebar footer footer footer';
+  grid-gap: 0.2rem;
+}
+nav{
+  background: black;
+  grid-area: nav;
+  color: white;
+}
+main{
+  background: linear-gradient(darkblue, black
+  );
+  color: white;
+  grid-area: main;
+}
+#sidebar{
+  background: radial-gradient(darkblue, black);
+  color: white;
+  grid-area: sidebar;
+}
+#card1{
+  background: radial-gradient(black, darkblue);
+  grid-area: card1;
+  color: white;
+}
+#card2{
+  background: radial-gradient(darkblue, black);
+  grid-area: card2;
+  color: white;
+}
+#card3{
+  background: radial-gradient(black, darkblue, black);
+  grid-area: card3;
+}
+#footer{
+  background: radial-gradient(darkgray, darkblue, darkgray);
+  grid-area: footer;
+  color: white;
+}
+
+@media only screen and (max-width: 550px) {
+  .dash-container{
+   grid-template-columns: 100%;
+   grid-template-rows: 5% 15% 20% 17% 17% 17% 9%;
+   grid-template-areas: 'nav'
+   'sidebar'
+   'main'
+   'card1'
+   'card2'
+   'card3'
+   'footer'; 
+  }
+  
+}
+
+
