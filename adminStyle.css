@@ -1,15 +1,41 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+}
+
+.main-flex-container{
   display: flex;
 }
 
+.dash-nav-flex{
+  background: radial-gradient(whitesmoke, gray);
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .sidebar {
-  width: 250px;
+  width: 200px;
   height: 100vh;
   background-color: #2c3e50;
   color: white;
   padding: 15px;
+}
+
+.dash-brand{
+  background-color: black;
+  color: aquamarine !important;
+  font-family: fantasy;
+  padding: 0px 0px;
+  border: 2px green dotted;
+  border-radius: 50%;
+  box-shadow: 2px 1px 1px 4px gray;
+  margin-left: 0px;
+  font-size: xx-small;
+}
+
+.fa-solid{
+  padding: 7px;
 }
 
 .sidebar h2 {
@@ -22,8 +48,8 @@ body {
 }
 
 .sidebar ul li {
-  margin: 50px 0;
-}
+  margin: 13px 0;
+  }
 
 .sidebar ul li a {
   color: white;
@@ -32,9 +58,18 @@ body {
   padding: 10px;
   transition: background-color 0.3s;
 }
+.hide{
+  display: non;
+}
 
 .sidebar ul li a:hover {
   background-color: #34495e;
+}
+
+.sidebar:hover{
+  width:;
+
+
 }
 
 .main-content {
@@ -48,4 +83,75 @@ body {
 
 .section.active {
   display: block;
+}
+h2, p{
+  text-align: center;
+  color: #22313f;
+}
+
+/* styles for students */
+.student-container{
+  width: 90%;
+  margin: auto;
+  background-image: urhl('https://images.unsplash.com/photo-1717954681381-7a5b91af265c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.buttoncon{
+  width: 30%;
+  margin: auto;
+}
+#createTableBtn, #createCourseBtn,  #updateChartButton{
+  background-color: #2c3e50;
+  margin-bottom: 5px;
+  padding: 7px;
+  color: white;
+  font-family: serif;
+  font-weight: bolder;
+  border-radius: 5px;
+  box-shadow: 1px 2px 1px 2px black;
+}
+/* styles for students */
+.tableContainer{
+  /* background-color: aqua; */
+  width: 80%;
+  margin: auto;
+}
+table{
+  margin: auto;
+  border-collapse: collapse;
+
+}
+thead{
+  background-color: #2c3e50;
+  color: white;
+  font-size: larger;
+  
+}
+tr,td, th, thead{
+  padding: 10px;
+}
+caption{
+  font-size: 5px;
+  font-weight: bold;
+  text-align: left;
+  padding: 15px 0px;
+}
+tr:nth-child(even){
+  background-color: lightgray;
+}
+/* span{
+  border: gray solid;
+  padding: 2px 3px;
+  background-color: whitesmoke;
+  border-radius: 5px; */
+
+tr:hover{
+  background-color: gray;
 }
