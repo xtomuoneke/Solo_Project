@@ -144,12 +144,12 @@ body{
 }
 .opt-container ul li{
   list-style: none;
-  padding: 20px 0px;
+  padding: 25px 0px;
   color: black;
   font-weight: bolder;
   box-sizing: border-box;
   text-align: center;
-  font-size: 15px;
+  font-size: 25px;
   font-family: 'Helvetica Neue'; 
 } 
 .opt-container p{
