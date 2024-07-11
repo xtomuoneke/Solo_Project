@@ -64,7 +64,7 @@ transArray.forEach(element => {
         <div class="losi-container">
           <a href="./login.html">LOGIN</a>
           <a href="./signUp.html">REGISTER</a>
-          <a href="./signUp.html">INQUIRE</a>
+          <a href="./aboutUs.html" target="_blank">INQUIRE</a>
         </div>
       </div>`;
       navbarEl.classList.add('hide');

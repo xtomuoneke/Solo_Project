@@ -24,6 +24,14 @@ body{
   border-radius: 50%;
   box-shadow: 2px 1px 1px 4px gray; 
 }
+
+.dropdown-menu .dropdown-item{
+  font-weight: bold;
+}
+.dropdown-menu li a .fa-solid,.fa-regular{
+  color: darkblue;
+  padding: 5px;
+}
 .nav-link,.sign{
   background-color: blue;
 }
