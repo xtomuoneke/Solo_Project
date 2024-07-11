@@ -312,6 +312,25 @@ body{
   justify-content: space-around;
 }
 
+/* Self-paced-container */
+.Self-paced-container{
+  background: linear-gradient(whitesmoke, black, whitesmoke);
+
+}
+.paced-flexcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+.paced1 p{
+  text-align: center;
+  font-size: 25px;
+  margin: 0px 30px;
+}
+
 
 /* Styles for about us begins here */
 .imgContainer{

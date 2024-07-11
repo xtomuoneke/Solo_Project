@@ -49,8 +49,8 @@ transArray.forEach(element => {
     var cancelEl;
     element.addEventListener('click', () => {
         optionContainerEl.innerHTML = `<div class="brand-container"> 
-        <a class="bran" href="/index.html">doyenTech</a>
-        <a href="/index.html"><i class="fa-solid fa-xmark"></i></a> 
+        <a class="bran" href="./index.html">doyenTech</a>
+        <a href="./index.html"><i class="fa-solid fa-xmark"></i></a> 
       </div>
       <div class="opt-container">
         <h4>Welcome to doyenTech!</h4> 
