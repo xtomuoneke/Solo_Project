@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.main-flex-container{
+  display: flex;
+  overflow: hidden;
+}
+
+.dash-nav-flex{
+  background: radial-gradient(whitesmoke, gray);
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+}
+
+.dash-brand{
+  background-color: black;
+  color: aquamarine !important;
+  font-family: fantasy;
+  padding: 0px 0px;
+  border: 2px green dotted;
+  border-radius: 50%;
+  box-shadow: 2px 1px 1px 4px gray;
+  margin-left: 0px;
+  font-size: xx-small;
+}
+
+
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 13px 0;
+  }
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+
+.sidebar ul li a:hover {
+  background-color: #34495e;
+}
+
+.main-content {
+  padding: 20px;
+}
+/* Overview card styles */
+.cadcontainer h1 {
+  color: #0c012f;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.cadflex {
+  display: flex;
+  gap: 2rem;
+
+}
+
+.cardstudent {
+  background-color: antiquewhite;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 23.25%;
+  height: 120px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 2px 3px 3px 1px rgb(219, 181, 109);
+  cursor: pointer;
+}
+
+.cardstudent:hover {
+  transform: translate(-5px);
+
+}
+
+.cadheader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.passcodeinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  font-size: 20px;
+  /* background-color: rgba(37, 35, 35, 0.897); */
+  /* background-color: rgb(85, 60, 15); */
+  background-color: hsl(0, 0%, 9%);
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+
+}
+
+.cardstudent:nth-child(1) {
+  /* background-color: rgb(94, 64, 13); */
+  background-color: hsl(0, 0%, 25%);
+}
+
+.cardstudent:nth-child(3) {
+  /* background-color:rgb(200, 166, 32); */
+  background-color: hsl(0, 0%, 65%);
+}
+
+.cardstudent:nth-child(2) {
+  /* background-color: rgb(194, 134, 11); */
+  background-color: hsl(0, 0%, 45%);
+}
+
+.cardstudent:nth-child(4) {
+  /* background-color: rgb(236, 166, 32); */
+  background-color: hsl(0, 0%, 85%);
+}
+
+/* Custom class for my CSS */
+.darkgray {
+
+  background-color: rgb(85, 60, 15);
+}
+
+.orange {
+  background-color: olivedrab;
+}
+
+.green {
+  background-color: orange;
+}
+
+img {
+  width: 40px;
+  border: solid 2px #0c012f;
+  border-radius: 50%;
+  box-shadow: 2px white;
+}
+
+
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+.section{
+  width: 90%;
+  margin: auto;
+} 
+
+.section p{
+  background-color: darkblue;
+  color: white;
+  font-size: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid cadetblue;
+  border-radius: 20%;
+  text-align: center;
+  box-shadow: 1px 2px 2px 4px #22313f;
+}
+
+/* styles for students */
+.student-container{
+  width: 90%;
+  margin: auto;
+  background-image: uirl('https://images.unsplash.com/photo-1717954681381-7a5b91af265c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.buttoncon{
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  /* width: 30%; */
+  margin: auto;
+}
+
+/* flex content */
+.flex-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+#createTableBtn, #createCourseBtn,  #createChartBtn, #createBarChartBtn{
+  background-color: #2c3e50;
+  margin-left: 95px;
+  padding: 4px;
+  color: white;
+  font-family: serif;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 1px 2px 1px 2px black;
+}
+.removeBtn{
+  display: none;
+}
+/* styles for students */
+.tableContainer{
+  /* background-color: aqua; */
+  width: 80%;
+  margin: auto;
+}
+table{
+  margin: auto;
+  border-collapse: collapse;
+
+}
+thead{
+  background-color: #2c3e50;
+  color: white;
+  
+}
+tr,td, th, thead{
+  padding: 2px;
+}
+caption{
+  font-size: 2px;
+  font-weight: bold;
+  text-align: left;
+  padding: 0px 0px;
+}
+tr:nth-child(even){
+  background-color: lightgray;
+}
+/* span{
+  border: gray solid;
+  padding: 2px 3px;
+  background-color: whitesmoke;
+  border-radius: 5px; */
+
+tr:hover{
+  background-color: gray;
+}
+
+/* responsiveness */
+@media (max-width: 969px){
+  .flex-section{
+    display: block;
+  }
+
+}
